@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hamburger <Menu></Menu></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#">Hamburger <Menu></Menu></a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a href="#" id="nav-toggle">
+                        <span></span>
+                    </a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 1</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="image-container">
+        <picture>
+            <source media="(max-width: 800px)" srcset="/images/smolhorse.png">
+            <source media="(max-width: 1000px)" srcset="/images/midhorse.png">
+            <source media="(min-width: 1001px)" srcset="/images/bighorse.png">
+            <img src="images/bighorse.png" alt="Horses in a field">
+        </picture>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
